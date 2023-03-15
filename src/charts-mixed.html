@@ -1,0 +1,97 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Mixed charts"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html", {"pagetitle": "Charts", "title": "Mixed Charts"})
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Line & Column Charts</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="line_column_chart" data-colors='["--bs-primary", "--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Multiple Y-Axis Charts</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="multi_chart" data-colors='["--bs-primary", "--bs-info", "--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row -->   
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Line & Area Charts</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="line_area_chart" data-colors='["--bs-primary", "--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Line, Column & Area Charts</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="line_area_charts" data-colors='["--bs-primary", "--bs-success", "--bs-danger"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row -->   
+                                             
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- mixed charts init -->
+        <script src="assets/js/pages/apexcharts-mixed.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

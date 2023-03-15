@@ -1,0 +1,74 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Polararea charts"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html", {"pagetitle": "Charts", "title": "Polararea Charts"})
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Basic-Polar Area Chart</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="basic_polar_area" data-colors='["--bs-primary", "--bs-success", "--bs-warning","--bs-danger", "--bs-info", "--bs-success", "--bs-primary", "--bs-dark", "--bs-secondary"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Polar-Area Monochrome</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="monochrome_polar_area" data-colors='["--bs-primary"]' class="apex-charts" dir="ltr"></div> 
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        
+        <!-- polarareacharts init -->
+        <script src="assets/js/pages/apexcharts-polararea.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

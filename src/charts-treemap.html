@@ -1,0 +1,98 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Treemap charts"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html", {"pagetitle": "Charts", "title": "Treemaps Charts"})
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Basic Treemap Chart</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="basic_treemap" data-colors='["--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Multi-Dimensional Treemap Chart</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="multi_treemap" data-colors='["--bs-primary","--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row --> 
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Distributed Treemap Chart (Different Color for  each Cell)</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="distributed_treemap"  data-colors='["--bs-primary", "--bs-secondary", "--bs-success", "--bs-info","--bs-warning", "--bs-danger"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Treemap Chart with Color Ranges</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="color_range_treemap" data-colors='["--bs-info","--bs-danger"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row --> 
+                        
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- treecharts init -->
+        <script src="assets/js/pages/apexcharts-treemap.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

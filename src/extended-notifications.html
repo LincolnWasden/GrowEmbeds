@@ -1,0 +1,119 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Notifications"})
+
+        <!-- alertifyjs Css -->
+        <link href="assets/libs/alertifyjs/build/css/alertify.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- alertifyjs default themes  Css -->
+        <link href="assets/libs/alertifyjs/build/css/themes/default.min.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html", {"pagetitle": "Extended UI", "title": "Notifications"})
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Default Notifications</h4>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Default alert</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-message" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Success alert</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-success" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Error alert</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-error" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Warning alert</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-warning" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr> 
+                                                </tbody><!-- end tbody -->
+                                            </table><!-- end table -->
+                                        </div><!-- end table responsive -->
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Default Dialogs</h4>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Alert</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Confirm</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-confirm" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Prompt</td>
+                                                        <td class="text-end"><a href="javascript: void(0);"  id="alert-prompt" class="btn btn-primary btn-sm">Click me</a></td>
+                                                    </tr>
+                                                </tbody><!-- end tbody -->
+                                            </table><!-- end table -->
+                                        </div><!-- end table responsive -->
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->                            
+                        </div><!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- alertifyjs js -->
+        <script src="assets/libs/alertifyjs/build/alertify.min.js"></script>
+        <!-- notification init -->
+        <script src="assets/js/pages/notification.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

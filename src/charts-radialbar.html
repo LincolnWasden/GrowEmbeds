@@ -1,0 +1,120 @@
+@@include("partials/main.html")
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Radialbar charts"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/horizontal.html", {"pagetitle": "Charts", "title": "Radialbar Charts"})
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Basic Radialbar Chart</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="basic_radialbar" data-colors='["--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Multiple Radialbar</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="multiple_radialbar" data-colors='["--bs-primary", "--bs-success", "--bs-warning", "--bs-danger"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row --> 
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Circle Chart - Custom Angle</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="circle_radialbar" data-colors='["--bs-primary", "--bs-info", "--bs-danger", "--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Gradient Circle Chart</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="gradient_radialbar" data-colors='["--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row --> 
+
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="card h-100 mb-xl-0">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Stroked Circular Gauge</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="stroked_radialbar" data-colors='["--bs-success"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="card h-100 mb-xl-0">
+                                    <div class="card-header justify-content-between d-flex align-items-center">
+                                        <h4 class="card-title">Semi Circular Gauge</h4>
+                                     </div><!-- end card header --> 
+                                    <div class="card-body">                                        
+                                        <div id="semi_radialbar" data-colors='["--bs-primary"]' class="apex-charts" dir="ltr"></div>
+                                    </div><!-- end cardbody -->
+                                </div><!--end card-->
+                            </div><!-- end col -->
+                        </div><!-- end row --> 
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- radialbar charts init -->
+        <script src="assets/js/pages/apexcharts-radialbar.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
